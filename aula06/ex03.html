@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+    <style>
+        /* comentário em css */
+    </style>
+</head>
+<body>
+    <h1>aprendendo a mexer com variáveis</h1>
+    <p>aula 06</p> <!-- comentário em html -->
+    <script>
+        /*
+        var n1 = window.prompt('digite um número') // adiciona valor da window na var 'n1'
+        var n2 = window.prompt('digite um segundo número') // adiciona valor da window na var 'n2'
+        var s = n1 + n2
+        window.alert('a soma é' + s) // + tem função de concatenação
+        // aqui o resultado será uma string + string pois o window.prompt() retorna sempre uma string então temos que tranformar string em number
+        */
+        var n1 = Number.parseInt(window.prompt('digite um número')) // adiciona valor da window na var 'n1'
+        var n2 = Number.parseInt(window.prompt('digite um segundo número')) // adiciona valor da window na var 'n2'
+        // Number.parseInt(n) para numeros inteiros
+        // Number.parseFloat(n) para numeros reais
+        // String(n) numero para string
+        var s = n1 + n2
+        //window.alert('a soma é ' + s + ', até a próxima!') // + tem função de concatenação
+        window.alert(`a soma é ${s}, até a próxima!`) // maneira melhorada de juntar string + outras variaveis, utiliza crase
+    </script>
+</body>
+</html>

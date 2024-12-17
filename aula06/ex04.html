@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var s = 'javascript
+        s.toUpperCase() tudo maiusculo
+        s.toLowerCase() tudo minusculo
+        s.length quantos caracteres 
+        */
+       var nome = window.prompt('escreva seu nome')
+       var n1 = Number.parseInt(window.prompt('escreva um numero'))
+
+       document.write(`aqui esta seu nome em maiusculo ${nome.toUpperCase()}<br/>`)
+       document.write(`aqui esta seu nome em minusculo ${nome.toLowerCase()}<br/>`)
+       document.write(`aqui esta a quantidade de caracteres que tem o seu nome: ${nome.length} letras <br/><br/>`)
+
+       document.write(`o numero digitado como se fosse um valor monetário em Real seria: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br/>`) // coloca a var em formato do valor monetario escolhido
+       document.write(`o numero digitado como se fosse um valor monetário em Dolar seria: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}<br/>`)
+       document.write(`o numero digitado como se fosse um valor monetário em Euro seria: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}<br/>`)
+
+    </script>
+</body>
+</html>
