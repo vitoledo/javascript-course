@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Seu país de origem: <input type="text" id="txtnac" name="txtnac">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res">
+        <p>Verificando...</p>
+    </div>
+
+    <script>
+        function clicar(){
+            var nac = document.querySelector('input#txtnac')
+            var res = document.querySelector('div#res')
+            var nacs = String(nac.value)
+        
+            res.innerHTML = `<p>Você é do país: ${nacs}</p>`
+
+            if(nacs == 'Brasil'){
+                res.innerHTML += `<p>Você é do <strong>Brasil</strong>!</p>`
+            }else{
+                res.innerHTML += `<p>Você é <strong>Extrangeiro(a)</strong>!</p>`
+            }
+        }
+        
+    </script>
+</body>
+</html>
